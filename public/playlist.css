@@ -1,11 +1,43 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   box-sizing: border-box;
+  background-color:black;
+  font-family:fantasy;
+  color:white;
+}
+.quote-container{
+  text-align: left;
+  font-size:25px;
 }
 
+header{
+  font-size: 40px;
+  color:white;
+  text-decoration: underline;
+  margin:20px;
+  text-align: center;
+  height:40%;
+ 
+}
+.background-picture{
+  background-image:url("libs/background-1.png");
+  background-repeat: no-repeat; 
+  background-size:cover;
+  height:55vh;
+  width:100%;
+  margin-right:60px;
+} 
+
+
 .song {
+  margin-top:30px;
   margin-bottom: 20px;
+  border:2px solid white;
+  width:45%;
+  color:white;
+  text-align: center;
+  height:20%
 }
 
 .song a {
@@ -15,26 +47,79 @@
 
 .landing-container {
   font-size: 0px;
+  background-image:url("libs/background-night.png");
+  background-repeat: no-repeat; 
+  background-size:cover;
+  width:100%;
+  cursor:pointer;
 }
 
-.list-container, .song-container {
+
+.list-container{
   width: 50%;
   display: inline-block;
   font-size: 20px;
   vertical-align: top;
+  position:relative;
+  color:white;
+  background-size:cover;
+  background-image:url("libs/background-night.png");
+}
+.song:hover{
+  color:yellow;
+}
+.song-container {
+  display: inline-block;
+  font-size: 20px;
+  position:absolute;
+  top:64%;
+  right:10px;
+  color:white;
+  width:25%;
+  text-align:center;
+  border:2px solid white;
 }
 
 .admin {
   font-size: 40px;
-  position: absolute;
   bottom: 10px;
   right: 10px;
   cursor: pointer;
   color: white;
   text-shadow: 1px 1px #AAA;
+  background-color:black;
+  color:white;
+  display: inline-block;
+}
+
+.social{
+  width:35%;
+}
+.home{
+  font-size:40px;
+  display: inline-block;
+  margin-left:40px;
+  width:25%;
+  float:right;
+}
+.home:hover{
+  color:yellow;
 }
 
 .admin:hover {
-  color: #EEE;
+  color: yellow;
   text-shadow: 0px 0px 2px black;
+}
+.button-container{
+  display:hidden;
+}
+
+button{
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.delete:hover{
+  cursor:pointer;
 }

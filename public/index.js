@@ -3,7 +3,7 @@ var app = angular.module("playlistApp", [
   "pageCtrl", 
   "songCtrl", 
   "adminCtrl", 
-  "listCtrl" 
+  "listCtrl"  
 ])
 
 app.config(function($routeProvider){
@@ -20,4 +20,4 @@ app.config(function($routeProvider){
       templateUrl: "templates/landing.html"
     })
 
-})
+}) 

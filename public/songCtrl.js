@@ -1,4 +1,4 @@
-angular.module("songCtrl", [])
+angular.module("songCtrl", []) 
 .controller("SongController", function($scope){
 
   var howlSong
@@ -14,6 +14,7 @@ angular.module("songCtrl", [])
 
     howlSong = new Howl({
       urls: [ song.url ],
+      loop:true,
     }).play()
 
     $scope.isPlaying = true

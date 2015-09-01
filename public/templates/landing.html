@@ -1,32 +1,57 @@
-<div class="landing-container">
-  <div class="list-container" ng-controller="ListController">
 
-    <div class="song" 
-      ng-repeat="song in songs"
-      ng-click="changeSong(song)">
-      <div class="title">
-        {{ song.title }}
-      </div>
-      <div class="artist">{{ song.artist }}</div>
-      
+
+  <header> 
+    <div class = "background-picture">
+    Steve's Playlist
     </div>
 
+  <div class = "quote-container">
+      <div class = "quote"> Quote: "{{ specificQuote.quote }}"</div>
+      <div class = "musician"> Musician: {{specificQuote.author}}</div>
   </div>
+
+   </header>
+
+
+<div class="landing-container"> 
+
 
   <div class="song-container" ng-controller="SongController">
 
-    <div ng-show="song.title">
+    <div ng-show="song.title"> 
       <div>
         Title: <span ng-bind="song.title"></span>
-      </div>
+      </div> 
       <div>
         Artist: <span ng-bind="song.artist"></span>
       </div>
     </div>
 
+    <div class = "button-container">
+  <div ng-show = "playPause">
     <button ng-click="playPause()">
-      {{ (isPlaying ? "Pause" : "Play") }}
+      {{ (isPlaying ? "Pause" : "Play") }} 
     </button>
+    </div>
+    </div>
 
   </div>
-</div>
+
+
+
+
+  <div class="list-container" ng-controller="ListController">
+
+    <div class="song"
+      ng-repeat="song in songs"
+      ng-click="changeSong(song)">
+      <div class="title"> 
+        <strong>Title: {{ song.title }}</strong>
+      </div>
+      <div class="artist"><strong>Artist: {{ song.artist }}</strong></div>
+      <img src = "libs/social.png" class = "social"/>
+      
+  </div>
+
+
+</div> 

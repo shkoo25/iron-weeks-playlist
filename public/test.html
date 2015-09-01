@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html ng-app="playlistApp">
   <head>
-    <title>Iron Week's Playlist</title>
+    <title>Music Box</title>
     <link href="playlist.css" rel="stylesheet" />
   </head>
   <body>
 
-    <div ng-controller="PageController">
+    <div ng-controller="PageController"> 
       <div class="header">
       </div>
 
-      <div ng-view></div>
+      <div ng-view></div> 
 
       <a href="#admin">
-        <div class="admin">⚙</div>
+        <div class="admin">Add Song</div>
+      </a>
+      <a href="#home">
+        <div class="home">Go Back Home</div>
       </a>
     </div>
 
     
     <script src="libs/angular.js"></script>
     <script src="libs/angular-route.js"></script>
+    <script src="moment.js"></script>
     <script src="libs/howler.js"></script>
+    <script src="libs/underscore.js"></script>
     
     <script src="adminCtrl.js"></script>
+
     <script src="listCtrl.js"></script>
     <script src="pageCtrl.js"></script>
     <script src="songCtrl.js"></script>
